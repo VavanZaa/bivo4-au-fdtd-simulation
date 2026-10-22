@@ -1,0 +1,22 @@
+# Parameters
+r_total = 75e-9;
+A_total = pi * r_total^2;
+n = 8;
+A_single = A_total / n;
+r = sqrt(A_single / pi);
+
+# Example manual position
+x = 0e-9;  # <-- you can manually update this each time
+y = 0e-9;
+z = 12.5e-9;
+thickness = 25e-9;
+
+# Add gold circle
+addcircle;
+set("name", "gold_manual");
+set("x", x);
+set("y", y);
+set("z", thickness/2);
+set("radius", r);
+set("z span", thickness);
+set("material", "Au (Gold) - Palik");

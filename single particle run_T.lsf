@@ -1,0 +1,4 @@
+T_result = getresult("T_monitor", "T");
+lambda = T_result.lambda;
+T_power = T_result.T;  // This is the real transmittance
+plot(lambda*1e9, T_power, "Wavelength (nm)", "Power Transmittance");
